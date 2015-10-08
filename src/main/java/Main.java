@@ -13,7 +13,7 @@ public class Main {
         TestServlet testServlet = new TestServlet();
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
-        context.addServlet(new ServletHolder(testServlet),"/index");
+        //context.addServlet(new ServletHolder(testServlet),"/index");
 
         Server server = new Server(8080);
         server.setHandler(context);
